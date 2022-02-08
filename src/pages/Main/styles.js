@@ -31,10 +31,12 @@ export const Form = styled.form`
 
     input{
         flex: 1;
-        border: 1px solid #DDD;
+        border: 1px solid ${props => (props.error ? '#ff0000' : '#ddd')};
         padding: 10px 15px;
         border-radius: 4px;
         font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
     }
     
 
@@ -86,7 +88,7 @@ export const List = styled.ul `
 
   list-style: none;
   margin-top:20px;
-  font-family: 'Source Serif 4', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 
   li{
