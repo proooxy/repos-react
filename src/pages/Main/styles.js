@@ -80,3 +80,47 @@ export const SubmitButton = styled.button.attrs(props => ({
 
 
 `;
+
+
+export const List = styled.ul `
+
+  list-style: none;
+  margin-top:20px;
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 400;
+
+  li{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & + li {
+      border-top: 1px #eee solid;
+    }
+
+    a{
+      color: #0D2636;
+      text-decoration: none;
+    }
+  }
+`;
+
+export const DeleteButton = styled.button.attrs({
+  type:'button'
+})`
+
+  padding: 8px 7px;
+  margin-right: 6px;
+  background:transparent;
+  color: #0D2636;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  
+  
+  
+
+
+`;
