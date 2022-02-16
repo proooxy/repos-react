@@ -1,4 +1,4 @@
-import styled, {keyframes, css} from 'styled-components'
+import styled, { keyframes, css} from 'styled-components'
 
 export const Container = styled.div`
     max-width: 700px;
@@ -16,6 +16,8 @@ export const Container = styled.div`
         flex-direction: row;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
+        color: #303134;
+        
 
         svg{
             margin-right: 10px;
@@ -32,7 +34,7 @@ export const Form = styled.form`
 
     input{
         flex: 1;
-        border: 1px solid ${props => (props.error ? '#ff0000' : '#333')};
+        border: 1px solid ${props => (props.error ? '#ff0000' : '#303134')};
         padding: 10px 15px;
         border-radius: 4px;
         font-size: 17px;

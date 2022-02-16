@@ -73,7 +73,7 @@ export const IssuesList = styled.ul`
       width:36px;
       height:36px;
       border-radius: 50%;
-      border: 2px solid #0D2636;
+      border: 2px solid #333;
     }
 
     div{

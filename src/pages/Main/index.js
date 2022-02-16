@@ -80,8 +80,8 @@ export default function Main(){
     return(
         <Container>
             <h1>
-                <FaGithub size={30} color='#222' />
-                Meus Repositorios 👋
+                <FaGithub size={30} color='#303134' />
+                Meus Repositórios 👋
                 
             </h1>
 
@@ -121,6 +121,7 @@ export default function Main(){
                     </li>
                 ))}
             </List>
+
         </Container>
     )
 }
