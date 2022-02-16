@@ -80,8 +80,8 @@ export default function Main(){
     return(
         <Container>
             <h1>
-                <FaGithub size={25} />
-                Meus Repositorios
+                <FaGithub size={30} color='#222' />
+                Meus Repositorios 👋
                 
             </h1>
 
@@ -109,7 +109,7 @@ export default function Main(){
                         
                         <span>
                             <DeleteButton>
-                                <FaTrash size={14} onClick={() => handleDelete(repo.name)}/>
+                                <FaTrash size={18} onClick={() => handleDelete(repo.name)}/>
                             </DeleteButton>
                             {repo.name}
                         </span>

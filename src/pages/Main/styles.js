@@ -10,16 +10,17 @@ export const Container = styled.div`
 
 
     h1{
-        font-size: 20px;
+        font-size: 28px;
         display: flex;
         align-items: center;
         flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
 
         svg{
             margin-right: 10px;
         }
     }
-
 
 `;
 
@@ -31,7 +32,7 @@ export const Form = styled.form`
 
     input{
         flex: 1;
-        border: 1px solid ${props => (props.error ? '#ff0000' : '#ddd')};
+        border: 1px solid ${props => (props.error ? '#ff0000' : '#333')};
         padding: 10px 15px;
         border-radius: 4px;
         font-size: 17px;
@@ -56,7 +57,7 @@ export const SubmitButton = styled.button.attrs(props => ({
   type: 'submit',
   disabled: props.loading,
 }))`
-  background:#0D2636;
+  background:#9708cc;
   border: 0;
   border-radius: 4px;
   margin-left: 10px;
@@ -64,11 +65,17 @@ export const SubmitButton = styled.button.attrs(props => ({
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.4s;
 
 
   &[disabled]{
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  &:hover{
+    background:#b336e1;
+
   }
 
 
@@ -89,6 +96,7 @@ export const List = styled.ul `
   list-style: none;
   margin-top:20px;
   font-family: 'Poppins', sans-serif;
+  font-size: 18px;
   font-weight: 400;
 
   li{
@@ -99,12 +107,18 @@ export const List = styled.ul `
     justify-content: space-between;
 
     & + li {
-      border-top: 1px #eee solid;
+      border-top: 1px #333 solid;
     }
 
     a{
-      color: #0D2636;
+      color: #222;
       text-decoration: none;
+      transition-duration: 0.4s;
+
+      &:hover{
+        color: #444;
+
+      }
     }
   }
 `;
@@ -116,10 +130,15 @@ export const DeleteButton = styled.button.attrs({
   padding: 8px 7px;
   margin-right: 6px;
   background:transparent;
-  color: #0D2636;
+  color: #ff675a;
   border: 0;
   outline: 0;
   border-radius: 4px;
+  transition-duration: 0.4s;
+  &:hover{
+    color: #f73a2a;
+
+  }
   
   
   
